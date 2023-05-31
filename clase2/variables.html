@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables en Javascript</title>
+</head>
+<body>
+    <h1>Variables en Javascript</h1>
+    <span id="txt"></span>
+    <br>
+
+    <script>
+        /* para declarar una variable utilizamos 
+            la palabra reservada "let"
+        */
+       let numero = 9;
+       let frase = 'hola mundo';
+
+        /* para declarar una constante utilizamos 
+            la palabra reservada "const"
+        */
+        const nombre = 'marcos';
+
+
+        document.write( numero );
+        document.getElementById( 'txt' ).innerText = frase;
+        document.write('<br>');
+
+        //sobreescribimos el valor de la variable numero
+        numero = 10;
+        document.write( numero );
+        document.write('<br>');
+
+        document.write( nombre );
+        /*
+        nombre = 'Rick';
+        NO se puede sobreescribit porque es una constante
+        document.write( nombre );
+        */
+
+    </script>
+</body>
+</html>
