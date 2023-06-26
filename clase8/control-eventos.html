@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de eventos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Control de eventos</h1>
+    
+    <nav>
+        <a onclick="txt.innerText = 'hiciste click'"
+           onmouseover="txt.innerText = 'mouse sobre'"
+           onmouseout="txt.innerText = 'mouse fuera'"
+           href="#">enlace</a>
+        <a href="#" id="enlace2">enlace2</a>
+    </nav>
+    <span id="txt"></span>
+
+    <script src="js/control-eventos.js"></script>
+</body>
+</html>
